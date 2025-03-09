@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>IP-адрес</title>
+<title>Случайные данные</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+</style>
 </head>
 <body>
 
-<h1>Ваш IP-адрес (только на этой странице):</h1>
+<h1>Случайные данные</h1>
 
-<div id="ip"></div>
+<p>Случайное число: <span id="randomNumber"></span></p>
+<p>Случайное число от 1 до 10: <span id="randomNumberRange"></span></p>
+<p>Случайный цвет: <span id="randomColor"></span> <span style="display: inline-block; width: 20px; height: 20px; background-color: #randomColor" id="randomColorSquare"></span></p>
+<p>Случайное слово из списка: <span id="randomWord"></span></p>
 
-<script>
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('ip').innerText = data.ip;
-  });
-</script>
 
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Случайные данные</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Случайные данные</h1>
+
+<p>Случайное число: <span id="randomNumber"></span></p>
+<p>Случайное число от 1 до 10: <span id="randomNumberRange"></span></p>
+<p>Случайный цвет: <span id="randomColor"></span> <span style="display: inline-block; width: 20px; height: 20px; background-color: #randomColor" id="randomColorSquare"></span></p>
+<p>Случайное слово из списка: <span id="randomWord"></span></p>
+
+
+<script src="script.js"></script>
 </body>
 </html>
