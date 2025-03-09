@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IP-адрес</title>
+</head>
+<body>
+
+<h1>Ваш IP-адрес (только на этой странице):</h1>
+
+<div id="ip"></div>
+
+<script>
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('ip').innerText = data.ip;
+  });
+</script>
+
+</body>
+</html>
